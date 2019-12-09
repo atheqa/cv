@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  .hello_text {
+      display: flexbox;
+      flex-direction: column;
+      width: 50%;
+  }
+
+  h1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: medium;
+      color: maroon;
+      text-align: left;
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    color: maroon;
+    text-align: left;
+  }
+
+  .container_main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+  }
+
+  .container_left_column {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      align-items: stretch;
+      border: 1px solid orange;      
+  }
+
+  
+  .container_right_column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: stretch;
+    border: 1px solid red;      
+}

@@ -5,41 +5,75 @@ html {
     box-sizing: inherit;
   }
 
-
-  .hello_text {
-      display: flexbox;
-      flex-direction: column;
-      width: 50%;
-  }
-
-  h1 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: medium;
-      color: maroon;
-      text-align: left;
-  }
-
   h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: small;
-    color: maroon;
+    font-family: 'Crimson Text', serif;
+    font-size: 1em;
+    color: #800000;
     text-align: left;
+    text-transform: uppercase;
   }
+
+  body {
+    background-color: #f7f3ed;
+    font-family: 'Crimson Text', serif;
+  }
+
+  a {
+    text-decoration: none;
+    margin-left: 22px;
+    
+  }
+
+  .underline { 
+    border: 1px solid orange;;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  
 
   .container_main {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-      border: 1px solid black;
+      /* border: 1px solid black; */
   }
 
-  .container_left_column {
+
+  .container_left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+  }
+
+  .container_left_column_upper {
       display: flex;
       flex-direction: column;
-      width: 50%;
-      align-items: stretch;
-      border: 1px solid orange;      
+      /* border: 1px solid orange; */
+      align-items: flex-end;
+      padding-right: 4em;
+      padding-top: 13.5em;    
+  }
+
+  .container_left_column_lower {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid orange; */
+    justify-content: flex-end;
+    padding-right: 15em; 
+    padding-bottom: 13.5em;   
+}
+
+  .image_text {
+    background-size: cover;
+    background-image: url(background2.jpg);
+    background-position: center;
+    text-align: right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: 700 5vw 'ZCOOL XiaoWei', serif;;
   }
 
   
@@ -47,6 +81,30 @@ html {
     display: flex;
     flex-direction: column;
     width: 50%;
-    align-items: stretch;
-    border: 1px solid red;      
+    /* border: 1px solid red; */
+    padding-left: 4em;
+    padding-top: 4em;
 }
+
+  .container_right_column_lower {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .container_skills {
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .skills_left {
+    width: 25%;
+    /* border: 1px solid red; */
+  }
+
+  .skills_right {
+    width: 25%; 
+    /* border: 1px solid red;  */
+    }

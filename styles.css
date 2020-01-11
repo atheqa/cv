@@ -10,7 +10,13 @@ html {
     font-size: 1em;
     color: #800000;
     text-align: left;
-    text-transform: uppercase;
+    text-transform: uppercase;    
+    margin-bottom: 0;
+  }
+
+  .title_box {
+    border-bottom: solid 1px #e3bab3;
+    width: 25%;
   }
 
   body {
@@ -21,17 +27,10 @@ html {
   a {
     text-decoration: none;
     margin-left: 22px;
-    
-  }
-
-  .underline { 
-    border: 1px solid orange;;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), 
-      rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    color: #800000;
+    font-size: 30px;
   }
   
-
   .container_main {
       display: flex;
       flex-direction: row;
@@ -44,7 +43,12 @@ html {
     display: flex;
     flex-direction: column;
     width: 50%;
+  }
 
+  .vertical {
+    border-left: 2px solid #e3bab3;
+    height: 580px;
+    margin-top: 6em;
   }
 
   .container_left_column_upper {
@@ -81,7 +85,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 50%;
-    /* border: 1px solid red; */
+    /* border: 1px solid brown; */
     padding-left: 4em;
     padding-top: 4em;
 }
@@ -101,10 +105,21 @@ html {
 
   .skills_left {
     width: 25%;
+    padding-top: 0.5em;
     /* border: 1px solid red; */
   }
 
   .skills_right {
-    width: 25%; 
+    width: 25%;
+    padding-top: 0.5em;
     /* border: 1px solid red;  */
-    }
+  }
+
+  .inner_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0.5em;
+  }
+
+    
